@@ -1,8 +1,9 @@
-data:
-    mongodb:
-      uri: mongodb://root:secret@localhost:27017/product-service?authSource=admin
-    jpa:
-      show-sql: true
+spring:
+    data:
+        mongodb:
+          uri: mongodb://root:secret@localhost:27017/product-service?authSource=admin
+        jpa:
+          show-sql: true
 server:
   port: 8090
 eureka:
