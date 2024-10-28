@@ -1,11 +1,9 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/products
+    initialization-mode: always
     username: postgres
-    password: secret
-  sql:
-    init:
-      mode: always
+    password: secret  
   jpa:    
     hibernate:
       ddl-auto: create
