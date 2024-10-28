@@ -3,7 +3,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/products
     initialize: true
     username: postgres
-    password: secret  
+    password: secret
+  sql:
+    init:
+      mode: always
   jpa:    
     hibernate:
       ddl-auto: create
