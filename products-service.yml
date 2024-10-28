@@ -6,8 +6,9 @@ spring:
     password: secret
   sql:
     init:
-      mode: always
-  jpa:    
+      mode: always    
+  jpa:
+    show-sql: true
     hibernate:
       ddl-auto: create
     properties:
