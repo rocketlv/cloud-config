@@ -1,8 +1,14 @@
-data:
-    mongodb:
-      uri: mongodb://root:secret@localhost:27017/product-service?authSource=admin
-    jpa:
-      show-sql: true
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/products
+    username: postgres
+    password: secret
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 server:
   port: 8070
 eureka:
