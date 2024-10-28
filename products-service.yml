@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/products
-    initialization-mode: always
+    initialize: true
     username: postgres
     password: secret  
   jpa:    
