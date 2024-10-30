@@ -1,4 +1,8 @@
 spring:
+  config:
+    customer-url: http://localhost:8080/api/customers
+    products-url: http://localhost:8080/api/products
+    payments-url: http://localhost:8080/api/payments
   datasource:
     url: jdbc:postgresql://localhost:5432/orders
     initialize: true
